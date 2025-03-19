@@ -16,7 +16,7 @@ spring:
     name: your-app-name  # 애플리케이션 이름 설정
   
   datasource:
-    url: jdbc:mysql://localhost:3306/your-database  # 데이터베이스 URL 변경
+    url: jdbc:postgresql://localhost:5432/your-database  # 데이터베이스 URL 변경
     username: your-username  # 데이터베이스 사용자명 변경
     password: your-password  # 데이터베이스 비밀번호 변경
 
