@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<included>
+    <property name="FILE_LOG_DIR" value="${spring.application.name}/${spring.profiles.active}/logs/"/>
+    <property name="FILE_LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS, ${logback.timezone:-Asia/Seoul}} [%-5level] [%thread] [traceId=%X{traceId}] %logger{100} %method:%line - %msg%n"/>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${FILE_LOG_DIR}/server.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>${FILE_LOG_PATTERN}</Pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${FILE_LOG_DIR}/server.%d{yyyy-MM-dd, ${logback.timezone:-Asia/Seoul}}.%i.log.gz</fileNamePattern>
+            <maxFileSize>500MB</maxFileSize>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>2GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+
+        <file>${FILE_LOG_DIR}/error/error.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>${FILE_LOG_PATTERN}</Pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${FILE_LOG_DIR}/error/server.%d{yyyy-MM-dd, ${logback.timezone:-Asia/Seoul}}.%i.log.gz</fileNamePattern>
+            <maxFileSize>500MB</maxFileSize>
+            <maxHistory>10</maxHistory>
+            <totalSizeCap>2GB</totalSizeCap>
+        </rollingPolicy>
+    </appender>
+</included>

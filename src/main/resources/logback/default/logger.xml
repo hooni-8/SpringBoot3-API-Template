@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<included>
+    <logger name="jdbc" level="OFF"/>
+    <logger name="jdbc.sqlonly" level="OFF"/>
+    <logger name="jdbc.audit" level="OFF"/>
+    <logger name="jdbc.resultset" level="OFF"/>
+    <logger name="jdbc.connection" level="OFF"/>
+
+    <logger name="org.hibernate.SQL" level="OFF"/>
+    <logger name="org.hibernate.loader" level="OFF"/>
+
+    <logger name="org.hibernate.hql.internal" level="OFF"/>
+
+    <logger name="org.hibernate.jpa.internal.util.LogHelper" level="OFF"/>
+
+    <logger name="org.hibernate.orm.results" level="OFF"/>
+    <logger name="org.hibernate.orm.sql.ast.tree" level="OFF"/>
+    <logger name="org.hibernate.orm.results.graph.AST" level="OFF"/>
+    <logger name="org.hibernate.orm.connections.pooling" level="OFF"/>
+
+    <logger name="org.hibernate.engine.internal" level="OFF"/>
+    <logger name="org.hibernate.engine.loading.internal" level="OFF"/>
+    <logger name="org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator" level="OFF"/>
+
+    <logger name="org.hibernate.internal.util.EntityPrinter" level="OFF"/>
+
+    <logger name="com.zaxxer.hikari.HikariConfig" level="OFF"/>
+
+    <logger name="org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger" level="OFF"/>
+</included>

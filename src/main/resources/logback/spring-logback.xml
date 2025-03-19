@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <springProperty scope="context" name="spring.application.name" source="spring.application.name"/>
+    <springProperty scope="context" name="spring.profiles.active" source="spring.profiles.active"/>
+
+    <include resource="logback/default/console.xml" />
+    <include resource="logback/default/file.xml" />
+    <include resource="logback/default/logger.xml" />
+
+    <root level="INFO">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </root>
+    <logger name="jdbc.sqltiming" level="INFO"/>
+    <logger name="jdbc.resultsettable" level="OFF"/>
+
+</configuration>
