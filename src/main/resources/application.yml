@@ -15,9 +15,9 @@ spring:
 
   datasource:
     driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
-    url: jdbc:postgresql://localhost:5432/your-database
-    username: your-username
-    password: your-password
+    url: ENC(s7xb0CW4sVRlgT7tViYRjOnYVVRU8sh2gKhRiD5ex95iXkI8GZ9u+qf7g2y9sOmxDzmqoj8HZey0t4IU6Qa+WoORGIZs6jGq+nKMwySOk02x41qdVRZUaOsc85TwYUl9)
+    username: ENC(TeMlqkLccRHGQ4PzBB1oUPUqDvK4ZZkeaXOewXdLGJ5usGhqDfk/eerpH4dRRdCT)
+    password: ENC(xpgoun0Urk0dmen22yNCktet0Ha6mfIdb6ZENT0Km51PvW96YE32O7GDPiq4uDHF)
 
 ###########################################################################
 ### log config 위치 설정
