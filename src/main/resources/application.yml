@@ -48,7 +48,7 @@ springdoc:
       enabled: true
 
   swagger-ui:
-    path: /swagger.html
+    path: /
     enabled: true
     groups-order: ASC
     tags-sorter: alpha
