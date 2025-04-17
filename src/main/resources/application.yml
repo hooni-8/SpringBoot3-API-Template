@@ -18,9 +18,6 @@ spring:
     url: ENC(lV5aDNnMkqvh2oVHoutvvhhY9j/1LquDEpuscBetxUC3aLQU3a+6fiIBmXcYlZbYNScbI1l1fVZhPGOZDfrkGqrRwSuaeZ8D38qLxfcbc0ffX77BP/KKxdf5UEBReMBc)
     username: ENC(qj0bdp5i0aFsAD+bjtkVcHieCKKtG6qCJF8OW4KDUdKZOaZ6yLz0i0fbMsuQIG3m)
     password: ENC(SUOFjAAQv9EQFgiOvY0GrZAMIwNc4TutJTiZQA1L2gZvLvVNz4sF7f0i6/1TSj3A)
-#    url: jdbc:log4jdbc:postgresql://ip_address/db_name
-#    username: username
-#    password: password
 
 ###########################################################################
 ### log config 위치 설정

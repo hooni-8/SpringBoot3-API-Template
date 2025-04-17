@@ -10,7 +10,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import org.template.template.common.model.DefaultUserInfo;
 import org.template.template.controller.v1.BaseV1Controller;
-import org.template.template.service.v1.TestService;
+import org.template.template.service.v1.test.TestService;
 import org.template.template.test.v1.TestRequest;
 
 @Slf4j
