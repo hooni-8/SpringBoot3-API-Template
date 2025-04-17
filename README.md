@@ -23,3 +23,6 @@ spring:
 mybatis:
   config-location: classpath:mybatis-config.xml  # MyBatis 설정 파일 위치 변경
 ```
+
+### 4. Swagger URL
+> http://localhost:8080/template
